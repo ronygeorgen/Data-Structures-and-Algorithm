@@ -1,0 +1,2 @@
+
+# stack.push(2)
