@@ -44,10 +44,10 @@ def BFS_iterative(node, graph):
         current = queue.pop(0)
         visited.append(current)
         
-        for neighbor in graph[current]:
-            if neighbor not in visited_set:
-                queue.append(neighbor)
-                visited_set.add(neighbor)
+        for i in graph[current]:
+            if i not in visited_set:
+                queue.append(i)
+                visited_set.add(i)
     
     return visited
 
