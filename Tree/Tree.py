@@ -1,5 +1,5 @@
 class BST:
-    def __init__(self,key):
+    def __init__(self,key=None):
         self.key = key
         self.lchild = None
         self.rchild = None
@@ -105,7 +105,7 @@ def count(node):
     return 1+count(node.lchild)+count(node.rchild)
 
     
-root = BST(10)
+root = BST()
 root.insert(23)
 list1 = [3,4,65,23,5]
 for i in list1:
