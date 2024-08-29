@@ -4,7 +4,7 @@ def partition(array,lb,up):
     end = up
 
     while start < end:
-        while array[start] <= pivot:
+        while start <= up and array[start] <= pivot:
             start += 1
         while array[end] > pivot:
             end -= 1
